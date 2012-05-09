@@ -11,7 +11,12 @@ body {
 }
 
 a {
-  color: #08C;
+  color: #0085CF;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 .box {
@@ -31,14 +36,18 @@ a {
 .sidebar {
   float: left;
 }
-
   .sidebar a {
-    text-decoration: none;
+    color: #333;
   }
+
+    .sidebar a:hover {
+      color: #0085CF;
+      text-decoration: none;
+    }
 
   .sidebar img {
     border: 0;
-    padding: 0 3px;
+    padding-right: 3px;
   }
 
   .sidebar .avatar {
@@ -75,19 +84,14 @@ a {
     letter-spacing: 1px;
   }
 
-  .sidebar .sections {
-    border-top: 1px solid #CCC;
-    padding-top: 3px;
+  .sidebar .meta a {
+    padding-left: 5px;
   }
 
-    .sidebar .sections a {
-      color: #333;
-      padding: 3px 5px;
-    }
-
-      .sidebar .sections a:hover {
-        color: #0085CF;
-      }
+  .sidebar .sections {
+    border-top: 1px solid #CCC;
+    padding: 3px 0 0 5px;
+  }
 
     .sidebar .sections ul {
       margin: 0;
@@ -124,3 +128,22 @@ a {
       text-indent: -9999px;
       width: 52px;
     }
+
+.content {
+  float: left;
+  margin: 0 0 10px 0;
+  width: 782px;
+}
+
+  .content ul {
+    list-style: none;
+  }
+
+  .content .listing li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+  }
+
+  .content .listing li a {
+    float: left;
+  }
