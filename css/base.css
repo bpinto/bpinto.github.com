@@ -6,6 +6,7 @@
 body {
   background: #F1F1F1 none repeat scroll 0 0;
   font: 12px/1.5 "Lucida Grande", Geneva, Arial, Verdana, sans-serif;
+  color: #333;
   margin: 0;
   -webkit-font-smoothing: antialiased;
 }
@@ -62,7 +63,7 @@ a:hover {
 
   .sidebar .name {
     font-family: Helvetica, sans-serif;
-    font-size: 13px;
+    font-size: 1.10em;
     margin: 10px 0 10px 17px;
     text-transform: uppercase;
   }
@@ -140,10 +141,25 @@ a:hover {
   }
 
   .content .listing li {
-    display: list-item;
+    display: block;
     text-align: -webkit-match-parent;
+    line-height: 2em;
+  }
+
+  .content .listing li:hover {
+    color: #0085CF;
   }
 
   .content .listing li a {
-    float: left;
+    text-decoration: none;
+    display: block;
+    color: black;
+  }
+
+  .content .listing li a:hover {
+    color: #0085CF;
+  }
+
+  .content .listing li span {
+    float: right;
   }
