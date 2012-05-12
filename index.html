@@ -3,7 +3,18 @@ layout: layout
 title: "Bruno Pinto"
 ---
 
-<section class="content box">
+<section class="guide">
+  <ol id="breadcrumb" role="navigation" aria-label="Breadcrumbs">
+    <li id="bc-home">
+      <a class="home" href="/">Home</a>
+    </li>
+    <li class="title">
+      <span>Home</span>
+    </li>
+  </ol>
+</section>
+
+<section class="entries box">
   <ul class="listing">
     {% for post in site.posts %}
     <li>

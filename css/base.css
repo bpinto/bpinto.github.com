@@ -130,36 +130,47 @@ a:hover {
       width: 52px;
     }
 
+.entries {
+  float: left;
+  margin: 0 0 10px 0;
+  width: 782px;
+}
+
+  .entries ul {
+    list-style: none;
+  }
+
+  .entries .listing li {
+    display: block;
+    text-align: -webkit-match-parent;
+    line-height: 2em;
+  }
+
+  .entries .listing li:hover {
+    color: #0085CF;
+  }
+
+  .entries .listing li a {
+    text-decoration: none;
+    display: block;
+    color: black;
+  }
+
+  .entries .listing li a:hover {
+    color: #0085CF;
+  }
+
+  .entries .listing li span {
+    float: right;
+  }
+
 .content {
   float: left;
   margin: 0 0 10px 0;
   width: 782px;
 }
 
-  .content ul {
-    list-style: none;
-  }
-
-  .content .listing li {
-    display: block;
-    text-align: -webkit-match-parent;
-    line-height: 2em;
-  }
-
-  .content .listing li:hover {
-    color: #0085CF;
-  }
-
-  .content .listing li a {
-    text-decoration: none;
-    display: block;
-    color: black;
-  }
-
-  .content .listing li a:hover {
-    color: #0085CF;
-  }
-
-  .content .listing li span {
-    float: right;
-  }
+.content h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}

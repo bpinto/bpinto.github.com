@@ -2,11 +2,21 @@
 layout: layout
 ---
 
+<section class="guide">
+  <ol id="breadcrumb" role="navigation" aria-label="Breadcrumbs">
+    <li id="bc-home">
+      <a class="home" href="/">Home</a>
+    </li>
+    <li class="title">
+      <span>{{ page.title }}</span>
+    </li>
+  </ol>
+</section>
+
 <section class="content box">
   <h1>
-    <a href="{{ page.url }}">{{ page.title }}</a>
+    {{ page.title }}
   </h1>
 
-  {{ page.date | date: "%B %e, %Y" }}
   {{ content }}
 </section>
