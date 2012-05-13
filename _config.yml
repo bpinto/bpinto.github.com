@@ -3,3 +3,6 @@ permalink: /posts/:title
 name: Bruno Pinto
 description: Writings by Bruno Pinto. Bruno works at ThoughtWorks and enjoys drinking beer.
 url: http://bpinto.github.com
+markdown: redcarpet2
+redcarpet:
+  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "strikethrough", "superscript", "with_toc_data"]
