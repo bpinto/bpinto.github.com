@@ -190,6 +190,10 @@ a:hover {
     list-style: none;
   }
 
+  .content p {
+    margin-top: 10px;
+  }
+
 .info {
   left: 985px;
   position: fixed;
