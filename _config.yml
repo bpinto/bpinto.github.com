@@ -1,2 +1,5 @@
 auto: true
 permalink: /posts/:title
+name: Bruno Pinto
+description: Writings by Bruno Pinto. Bruno works at ThoughtWorks and enjoys drinking beer.
+url: http://bpinto.github.com
