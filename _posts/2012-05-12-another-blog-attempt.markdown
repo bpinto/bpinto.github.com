@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Another Blog Attempt
+tags: [blog]
 ---
 
 I've tried to keep a blog a few times in the past and the result was always the
