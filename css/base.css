@@ -106,9 +106,9 @@ a:hover {
 
 .guide {
   background: url("../images/guide.png") no-repeat 0 0;
-  border-color: #F1F1F1;
+  border-color: rgba(241, 241, 241, 0.8);
   border-style: solid;
-  border-width: 10px 0 5px 0;
+  border-width: 10px 0 10px 0;
   display: inline-block;
   left: 172px;
   position: fixed;
