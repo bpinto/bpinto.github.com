@@ -35,7 +35,7 @@ a:hover {
 .sidebar {
   position: fixed;
   left: 10px;
-  top: 10px;
+  top: 50px;
 }
   .sidebar a {
     color: #333;
@@ -192,7 +192,7 @@ a:hover {
 .info {
   left: 985px;
   position: fixed;
-  top: 10px;
+  top: 50px;
 }
 
   .info ol {
