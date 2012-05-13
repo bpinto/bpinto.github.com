@@ -22,5 +22,6 @@ layout: layout
 <section class="info box">
   <ol>
     <li><b>Date:</b> {{ page.date | date: "%B %e, %Y" }}</li>
+    <li><b>Tags:</b> {{ page.tags | array_to_sentence_string }}</li>
   </ol>
 </section>
