@@ -185,6 +185,10 @@ a:hover {
     margin-bottom: 30px;
   }
 
+  .content h2 {
+    margin-top: 20px;
+  }
+
   .content ul {
     margin: 10px;
     list-style: none;
