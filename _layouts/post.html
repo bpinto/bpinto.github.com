@@ -14,9 +14,13 @@ layout: layout
 </section>
 
 <section class="content box">
-  <h1>
-    {{ page.title }}
-  </h1>
+  <h1>{{ page.title }}</h1>
 
   {{ content }}
+</section>
+
+<section class="info box">
+  <ol>
+    <li><b>Date:</b> {{ page.date | date: "%B %e, %Y" }}</li>
+  </ol>
 </section>
