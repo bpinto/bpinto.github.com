@@ -15,9 +15,9 @@ posts per blog:
 - Invest on the environment;
 
 What I'm trying to do right now, is to invest on the enviroment. I'm creating
-my own blog layout and I'll use / create [Jekyll][]
-plugins whenever necessary. This way, I believe I will start thinking about it not
-only as a way to share but also as a way to do what I most enjoy -- developing.
+my own blog layout and I'll use / create [Jekyll Plugins][] whenever necessary.
+This way, I believe I will start thinking about it not only as a way to share
+but also as a way to do what I most enjoy -- developing.
 
 What's your opinion about this? Am I missing something? Ping me!
 
@@ -28,4 +28,5 @@ What's your opinion about this? Am I missing something? Ping me!
 
 
 [Jekyll]: http://jekyllrb.com/
+[Jekyll Plugins]: https://github.com/mojombo/jekyll/wiki/Plugins
 [Zach Holman's Blog]: http://zachholman.com/
