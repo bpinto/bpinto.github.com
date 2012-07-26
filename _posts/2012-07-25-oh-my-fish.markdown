@@ -1,0 +1,19 @@
+---
+layout: post
+title: Oh My Fish
+tags: [fish, oh my fish]
+---
+
+I've been using [Zsh][] as my default shell for a long time, it has many builtin functions that I use on my day-to-day work. I also use some plugins that come with [Oh My Zsh][] and others that I did; This is my current plugin list: _autojump, brew, bundler, fast_rake, git, mkv, rails3, rake, rvm, wifi_ .
+
+Time has passed and I started noticing that my shell is **really slow**. It's certainly related to the amount of functions and plugins that I use, so I looked for a solution and found [Fish][].
+
+[Fish][] is a incredible fast shell which "uses a cutting-edge technology known as 'threads,' so it doesn't stutter even on sluggish filesystems". It has a different approach then [Bash][] and [Zsh][] which might not meet your needs (and maybe not mine) but I'm willing to try it.
+
+At this moment, I'm adding these plugins to [Oh My Fish][] (a framework for [Fish][] that I'm developing) and in the future I intend to add support for more tools. Wanna help me and the [Fish][] community? [Fork it][Oh My Fish]!
+
+[Bash]: http://www.gnu.org/software/bash/
+[Fish]: http://ridiculousfish.com/shell/
+[Zsh]: http://www.zsh.org/
+[Oh My Fish]: https://github.com/bpinto/oh-my-fish/
+[Oh My Zsh]: https://github.com/robbyrussell/oh-my-zsh/
