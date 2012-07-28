@@ -207,3 +207,10 @@ a:hover {
   .info ol {
     list-style: none;
   }
+
+.comment {
+  left: 172px;
+  position: relative;
+  top: 60px;
+  width: 782px;
+}
