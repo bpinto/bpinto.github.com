@@ -8,6 +8,7 @@ body {
   color: #333;
   font: 12px/1.5 "Lucida Grande", Geneva, Arial, Verdana, sans-serif;
   -webkit-font-smoothing: antialiased;
+  padding-bottom: 100px;
 }
 
 a {
