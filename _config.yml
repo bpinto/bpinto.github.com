@@ -6,3 +6,4 @@ url: http://bpinto.github.com
 markdown: rdiscount
 rdiscount:
   extensions: [smart]
+pygments: true
