@@ -11,9 +11,9 @@ If you are _lucky_, you found this [step-by-step tutorial][rvm and fish] that in
 Why would the cd function lose features if _"RVM just manipulates environment variables"_?  Rvm is not **just** manipulating environment variables, it also overrides shell commands like cd.
 
 {% highlight bash %}
-set -l GITHUB https://raw.github.com/lunks/fish-nuggets/master/functions
-curl --create-dirs -o ~/.config/fish/functions/rvm.fish $GITHUB/rvm.fish
-curl -o ~/.config/fish/functions/cd.fish $GITHUB/cd.fish
+➜ set -l GITHUB https://raw.github.com/lunks/fish-nuggets/master/functions
+➜ curl --create-dirs -o ~/.config/fish/functions/rvm.fish $GITHUB/rvm.fish
+➜ curl -o ~/.config/fish/functions/cd.fish $GITHUB/cd.fish
 {% endhighlight %}
 
 As you can see, the third step from the tutorial is actually redefining the cd function.
@@ -28,8 +28,8 @@ Functions in fish are lazy loaded, and ones priority depends on the directory th
 One of the features your cd command loses is being able to cd into your previous path:
 
 {% highlight bash %}
-➜  ~ cd -
-  cd: The directory '-' does not exist
+➜ cd -
+cd: The directory '-' does not exist
 {% endhighlight %}
 
 
