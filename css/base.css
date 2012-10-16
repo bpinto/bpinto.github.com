@@ -226,3 +226,8 @@ footer {
   display: block;
   padding: 0 0 10px 10px;
 }
+
+::selection {
+  background-color: #0085CF;
+  color: white;
+}
