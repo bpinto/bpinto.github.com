@@ -60,7 +60,7 @@ Define janky's URL on heroku **with a trailing slash**:
 JANKY_BASE_URL: http://JANKY_APP_NAME.herokuapp.com/
 {% endhighlight %}
 
-Our server has Jenkins' *Matrix-based security* enabled, so only registered users can access Jenkins. In order to authorize Janky, you need to create an account for it and specify both the username and its api token that can be found on the user configuration page: *http://jenkins.example.com/user/#{jenkins_user_name}/configure* on the URL.
+Our server has Jenkins' *Matrix-based security* enabled, so only registered users can access Jenkins. In order to authorize Janky, you need to create an account for it and specify both the username and its api token that can be found on the user configuration page: *http://jenkins.example.com/user/JENKINS_USER_NAME/configure* on the URL.
 {% highlight bash %}
 JANKY_BUILDER_DEFAULT: http://USER:API_TOKEN@jenkins.example.com/
 {% endhighlight %}
