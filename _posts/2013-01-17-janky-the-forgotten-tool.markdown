@@ -67,20 +67,20 @@ JANKY_BUILDER_DEFAULT: http://USER:API_TOKEN@jenkins.example.com/
 
 Define the configuration dir (default):
 
-{% highlight bash %}
+{% highlight m2 %}
 JANKY_CONFIG_DIR: /app/config
 {% endhighlight %}
 
 Hubot's user and password are the same passwords you will use when configuring Janky's hubot script. Create your own secure user/password here.
 
-{% highlight bash %}
+{% highlight m2 %}
 JANKY_HUBOT_USER: Login used to protect the Hubot API.
 JANKY_HUBOT_PASSWORD: Password for the Hubot API.
 {% endhighlight %}
 
 You have to create a github account (or use your own) to allow janky to connect to github and set up service hooks for you.
 
-{% highlight bash %}
+{% highlight m2 %}
 JANKY_GITHUB_USER: Login of the GitHub user. Requires Administrative privileges to set up service hooks.
 JANKY_GITHUB_PASSWORD: Password for the GitHub user.
 {% endhighlight %}
