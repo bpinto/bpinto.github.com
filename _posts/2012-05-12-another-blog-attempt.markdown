@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Another Blog Attempt
+title: Another blog attempt
 tags: [blog]
 ---
 
