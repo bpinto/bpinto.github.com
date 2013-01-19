@@ -4,17 +4,17 @@ title: Janky - The forgotten tool
 tags: [janky, jenkins, github, ci, continuous, integration, campfire, hubot]
 ---
 
-Where I work we use [GitHub][] as our Git central repository, and we have Yoda, our [Hubot][], helping us on our day to day tasks. We had to setup a Continuous Integration server for our project and after looking at all the CI options out there, we had to decide between [Travis-ci][] or [Jenkins][]. Both are well-known continuous integration server but they were not exactly what we needed at the moment. Travis is $150 per month and Jenkins has to be manually installed and configured, plus it has an awkward interface.
+Where I work we use [GitHub][] as our Git central repository, and we have Yoda, our [Hubot][], helping us on our day to day tasks. We had to setup a Continuous Integration server for our project and after looking at all the CI options out there, we had to decide between [Travis-ci][] or [Jenkins][]. Both are well-known continuous integration servers but they were not exactly what we needed at the moment. Travis is $150 per month and Jenkins has to be manually installed and configured, plus it has an awkward interface.
 
-Travis could certainly be our solution in a future moment but, for now, we decided to try Jenkins. As a solution for the issues raised, we decided to use [Janky][], _"(...) a continuous integration server built on top of Jenkins, controlled by Hubot, and designed for GitHub"_.
+Travis could certainly be our solution in a future moment but, for now, we decided to try Jenkins out. As a solution for the issues raised, we decided to use [Janky][], _"(...) a continuous integration server built on top of Jenkins, controlled by Hubot, and designed for GitHub"_.
 
-When I first read Janky's readme, I thought it would be an easy setup... I couldn't be more **wrong**. There are too many environment variables you have to setup and apparently GitHub is not using the gem version they release on their own servers... Anyway, one can always fork and submit pull requests, right?
+When I first read Janky's readme, I thought it would be an easy setup... Well, I couldn't be more **wrong**. It's hard to know which values should be set for each of the required environment variables, and the gem is outdated forcing you to build it from git directly...
 
-So, let me guide you through the setup process.
+Anyway, one can always fork and submit pull requests, right? So, let's focus on the setup process.
 
 ## Installing Jenkins
 
-Janky recommends Jenkins version 1.427, but I have installed a newer version and I remember I had a problem but I managed to solve it – *I forgot the problem* –, so you don't need to worry about newer versions. [Installing Jenkins][] guide is easy to follow and will help you on installing a Jenkins server if you don't have one yet.
+Janky recommends Jenkins version 1.427, but as I installed a newer version (1.498) you should be fine with newer versions. [Installing Jenkins][] guide is easy to follow and will help you on installing a Jenkins server if you don't have one yet.
 
 ## Installing Janky
 
@@ -71,7 +71,7 @@ Define the configuration dir (default):
 JANKY_CONFIG_DIR: /app/config
 {% endhighlight %}
 
-Hubot's user and password are the same passwords you will use when configuring Janky's hubot script. Create your own secure user/password here.
+Hubot's user and password are the same passwords you will use when configuring [Janky's hubot script][]. Create your own secure user/password here.
 
 {% highlight m2 %}
 JANKY_HUBOT_USER: Login used to protect the Hubot API.
@@ -85,7 +85,7 @@ JANKY_GITHUB_USER: Login of the GitHub user. Requires Administrative privileges 
 JANKY_GITHUB_PASSWORD: Password for the GitHub user.
 {% endhighlight %}
 
-There are two variables that apparently should be configured with the same value, and this token value is obtained by using the one that comes in the following curl command response:
+There are two variables that apparently should be configured with the same value, and the token value is obtained by using the one that comes in the following curl command response:
 
 {% highlight bash %}
 ➜ curl -u USERNAME:PASSWORD -d '{ "scopes": [ "repo:status" ], "note": "janky" }' \
@@ -124,7 +124,7 @@ HUBOT_JANKY_URL: http://JANKY_HUBOT_USER:JANKY_HUBOT_PASSWORD@JANKY_APP_NAME.her
 
 ## Troubleshooting
 
-After all heroku commands you might need to specify the app on which you want to run the command using the *--app* argument.
+After all heroku commands you might need to specify the app on which you want to run the command using the argument *&minus;&minus;app*.
 
 {% highlight bash %}
 ➜ heroku run rake db:migrate --app MY_APP_NAME
@@ -136,6 +136,7 @@ After all heroku commands you might need to specify the app on which you want to
 [Hubot]: http://hubot.github.com
 [Janky]: https://github.com/github/janky
 [Janky's guide]: https://github.com/github/janky#deploying
+[Janky's hubot script]: https://github.com/github/hubot-scripts/blob/master/src/scripts/janky.coffee
 [Jenkins]: http://jenkins-ci.org/
 [Installing Jenkins]: https://wiki.jenkins-ci.org/display/JENKINS/Installing+Jenkins
 [Travis-ci]: https://travis-ci.org/
