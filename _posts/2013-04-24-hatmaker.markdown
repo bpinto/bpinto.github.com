@@ -1,0 +1,17 @@
+---
+layout: post
+title: Hatmaker - An alfred workflow manager
+tags: [hatmaker, alfred, workflow, manager, alfredapp, osx]
+---
+
+It's hard for me to use a computer without [Alfred][] nowadays – it's one of the first apps I install when bootstrapping my computer. And with its recent release – version 2 – where they have introduced workflows, it has gotten even better.
+
+There is one problem though and this is what I'm trying to solve with [Hatmaker][]: Workflows are made by the community and the official place to release them is a forum, as you can imagine, keeping your workflows up-to-date is a madness.
+
+There are some unofficial attempts to provide a solution for this problem but still they all miss some important features. Hatmaker goal is not to re-invent the wheels but to unify these solutions in order to provide an easy workflow manager.
+
+Hatmaker *version 1.3* has been released and with the help of the community, new features are being added continuously. Great features are to be added on the next release versions, make sure you follow it on [github][] and on this blog.
+
+[alfred]: http://www.alfredapp.com/
+[github]: https://github.com/bpinto/hatmaker
+[hatmaker]: https://github.com/bpinto/hatmaker
